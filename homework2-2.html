@@ -1,0 +1,89 @@
+<html>
+<header>
+    <title>Contact Form</title>
+</header>
+
+<style type="text/css">
+    body{
+        margin-top:50px;margin-bottom:30px;margin-right:50px;margin-left:50px;
+        background:#d9f4ed;
+        }
+        ul{
+            list-style-type:none;
+            }
+    .field{
+        background#d9f4ed;
+        border: 8px solid #ffffff;
+        border-radius:8px;
+        }
+    .legand{
+        font-family: 'Inika', serif;
+        font-size:150%;
+        }
+    #summit{
+        width:50px;
+        align:right;
+        float:right;
+        }
+        
+</style>
+<body>
+
+<form action="https://docs.google.com/spreadsheet/formResponse?formkey=dDhFdFBITDc2X3FaUGNPaGRWb29mNlE6MQ&ifq" method="POST">
+ <fieldset class="field">
+  <legend class="legand">Personalia:</legend>
+  Student_ID¡G<input type="hidden" name="entry.0.single" value="99306008"><br>
+  <br>
+  Gender¡G
+    <ul>
+        <li><input type="radio" name="entry.1.group" value="M">Male</li>
+        <li><input type="radio" name="entry.1.group" value="F">Female</li>
+        </ul>
+ </fieldset>
+ <fieldset class="field">
+ <legend class="legand">Others:</legend>
+    Favorite foods¡G 
+    <ul>
+        <li>
+          <input type="checkbox" name="entry.2.group"
+           id="ap" value="apple">
+          <label for="ap">Apple</label>
+        </li>
+        <li>
+          <input type="checkbox" name="entry.2.group"
+           id="ba" value="banana">
+          <label for="ba">Banana</label>
+        </li>
+        <li>
+          <input type="checkbox" name="entry.2.group"
+           id="le" value="lemon">
+          <label for="le">Lemon</label>
+        </li>
+        <li>
+          <input type="checkbox" name="entry.2.group"
+           id="wa" value="watermelon">
+          <label for="wa">Watermelon</label>
+        </li>
+   </ul>
+    <br>
+   Relationship¡G<select name="entry.3.single">
+                 <option>Single</option>
+                 <option>Dating</option>
+                 <option>Married</option>
+                 <option>Hard to explain</option>
+            </select><br>
+    <br>
+    E-mail¡G <input type="text" name="entry.4.single"><br>
+     <br>
+    Comments: <br>
+        <div></div>
+        <textarea name="entry.5.single">
+        </textarea>
+     <br>
+ </fieldset>
+ <br>
+        <div ID="summit" ><input type="submit" value="°e¥X"></div>
+</form>
+
+</body>
+</html>
