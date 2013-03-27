@@ -1,84 +1,105 @@
 <html>
-<header>
-    <title>Contact Form</title>
-</header>
+<header><title>Contact Form</title></header>
 
 <style type="text/css">
     body{
-        margin-top:50px;margin-bottom:30px;margin-right:50px;margin-left:50px;
+        margin-top:50px;margin-bottom:30px;margin-right:100px;margin-left:100px;
         background:#d9f4ed;
         }
-        ul{
-            list-style-type:none;
-            }
+    ul{
+        list-style-type:none;
+        }
     .field{
         background#d9f4ed;
         border: 8px solid #ffffff;
         border-radius:8px;
         }
-    .legand{
+    .legend{
         font-family: 'Inika', serif;
         font-size:150%;
         }
-    #summit{
+    #Submit{
         width:50px;
         align:right;
         float:right;
         }
+    footer{
+        clear:right;
+        }
         
 </style>
+
 <body>
-
-<form action="https://docs.google.com/spreadsheet/formResponse?formkey=dDhFdFBITDc2X3FaUGNPaGRWb29mNlE6MQ&ifq" method="POST">
- <fieldset class="field">
-  <legend class="legand">Personalia:</legend>
-  Student_ID：<input type="hidden" name="entry.0.single" value="99306008"><br>
-  <br>
-  Gender：
-    <ul>
-        <li><input type="radio" name="entry.1.group" value="M">Male</li>
-        <li><input type="radio" name="entry.1.group" value="F">Female</li>
-        </ul>
-
-    Favorite foods： 
-    <ul>
-        <li>
-          <input type="checkbox" name="entry.2.group"
-           id="ap" value="apple">
-          <label for="ap">Apple</label>
-        </li>
-        <li>
-          <input type="checkbox" name="entry.2.group"
-           id="ba" value="banana">
-          <label for="ba">Banana</label>
-        </li>
-        <li>
-          <input type="checkbox" name="entry.2.group"
-           id="le" value="lemon">
-          <label for="le">Lemon</label>
-        </li>
-        <li>
-          <input type="checkbox" name="entry.2.group"
-           id="wa" value="watermelon">
-          <label for="wa">Watermelon</label>
-        </li>
-   </ul>
-    <br>
-   Relationship：<select name="entry.3.single">
-                 <option value="Single">Single</option>
-                 <option value="Dating">Dating</option>
-                 <option value="Married">Married</option>
-                 <option value="Hard to explain">Hard to explain</option>
-            </select><br>
-    <br>
-    E-mail： <input type="text" name="entry.4.single" value><br>
-     <br>
-    Comments: 
-        <input name="entry.5.single" value><br>
- </fieldset>
- <br>
-        <div ID="summit" ><input type="submit" value="送出"></div>
+    <article>
+       <form action="https://docs.google.com/spreadsheet/formResponse?formkey=dDhFdFBITDc2X3FaUGNPaGRWb29mNlE6MQ&amp;ifq" method="POST">
+       <fieldset class="field">
+       <legend class="legend">Contact Form</legend>
+        <div ID="student_id">
+            <label for="student_id">Student ID</label>
+            <input type="hidden" name="entry.0.single" value="99306008" id="student_id">
+        </div>
+        <br>
+        <div ID="gender">
+            <label for="gender">gender</label>
+            <ul>
+            <li>
+                <label><input type="radio" name="entry.1.group" value="Boy" id="gender_1">Boy</label>
+            </li> 
+            <li>
+                <label><input type="radio" name="entry.1.group" value="Girl" id="gender_2">Girl</label>
+            </li>
+            </ul>
+        <br>
+        <div ID="foods">
+            <label for="foods">favorite foods</label>
+            <ul>
+            <li>
+                <label><input type="checkbox" name="entry.2.group" value="Apple">Apple</label>
+            </li>
+            <li>
+                <label><input type="checkbox" name="entry.2.group" value="Banana">Banana</label>
+            </li> 
+            <li>
+                <label><input type="checkbox" name="entry.2.group" value="Lemon">Lemon</label>
+            </li>
+            <li>
+                <label><input type="checkbox" name="entry.2.group" value="Watermelon">Watermelon</label>
+            </li>
+            </ul>
+        </div>
+        <br>
+        <div ID="relationship">
+            <label for="relationship">relationship</label>
+            <select name="entry.3.single" id="relationship">
+                <option value="single">single</option> 
+                <option value="dating">dating</option> 
+                <option value="married">married</option> 
+                <option value="hard to explain">hard to explain</option></select>
+        </div>
+        <br>
+        <div ID="email">
+            <labelfor="entry_4">email</label>
+            <input type="text" name="entry.4.single" value="" id="email"> 
+        </div>
+        <br>
+        <div ID="comments">
+            <label for="comments">comments</label>
+            <input type="text" name="entry.5.single" value="" id="conmments">
+        </div>
+        <br>
+        </fieldset>
+        <div ID="Submit">
+        <input type="submit" name="submit" value="提交">
+        </div>
 </form>
+    </article>
 
+    <br>
+    <br>
+    <br>
+    <footer>
+        <hr>
+        <p align="right">Web程式設計- Homework 2 99306008 余曉玟</p>
+    </footer>
 </body>
 </html>
