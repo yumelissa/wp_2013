@@ -15,7 +15,7 @@ body{
             font-weight:900;
             }
         .eng_family_s{
-            width:25%;height:80px;
+            width:15%;height:100px;
             background:#FFC1C1;
             box-sizing: border-box;
             font-family: 'Merienda', cursive;
@@ -23,16 +23,18 @@ body{
             display: inline-block;
             padding:5px;
             border-radius: 10px; 
+            float:left;
+            
             }
         .li_context{
-            width:50%;height:80px;
-            margin:10px;
+            width:50%;height:100px;
             background:#f5deb3;
             box-sizing: border-box;
             display: inline-block;
             opacity: 0.8;
             border-radius: 10px;
             padding:5px;
+            float:left;
             }
         .blank{
             clear:left;
@@ -44,3 +46,15 @@ body{
         #next{
             text-align:right;
             }
+        a:link{
+            text-decoration:none;
+            color: #4682b4;
+            border:
+          }
+        a:visited{
+            color: #a52a2a;
+          }
+        a:hover{
+            text-decoration: underline;
+            color: #FFFF80;
+          }
