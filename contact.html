@@ -1,0 +1,53 @@
+<html>
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<title>Assign2-form</title>
+	<style>
+		body,label,input{
+			font-size:10pt;
+		}
+		div{
+			padding:5px;
+			border-bottom:#C0C0C0 1px solid;
+		}
+	</style>
+</head>
+<body>
+	<h3>Contact Form</h3>
+	<form action="https://docs.google.com/spreadsheet/formResponse?formkey=dDhFdFBITDc2X3FaUGNPaGRWb29mNlE6MQ&amp;ifq" method="POST" id="ss-form">
+	<div>
+		<label>Name</label>
+		<input type="text" name="entry.0.single" value="" >
+	</div>
+	<div>
+		<label for="entry_1">Gender</label>
+		<label><input type="radio" name="entry.1.group" value="Boy" >Boy</label>
+		<label><input type="radio" name="entry.1.group" value="Girl">Girl</label>
+	</div>
+	<div>
+		<label for="entry_2">Favorite foods</label>
+		<dt><label><input type="checkbox" name="entry.2.group" value="Apple"  id="group_2_1">Apple</label>
+			<label><input type="checkbox" name="entry.2.group" value="Banana"  id="group_2_2">Banana</label></dt> 
+		<dt><label><input type="checkbox" name="entry.2.group" value="Lemon"  id="group_2_3">Lemon</label>
+			<label><input type="checkbox" name="entry.2.group" value="Watermelon"  id="group_2_4">Watermelon</label></dt>
+	</div>
+	<div>
+	<label class="ss-q-title" for="entry_3">Relationship</label>
+	<select name="entry.3.single" id="entry_3">
+		<option value="single">single</option> 
+		<option value="dating">dating</option> 
+		<option value="married">married</option> 
+		<option value="hard to explain">hard to explain</option>
+	</select>
+	</div>
+	<div>
+		<label class="ss-q-title" for="entry_4">Email</label>
+		<input type="text" name="entry.5.single" value="" class="ss-q-short" id="entry_5">
+	</div>
+	<div>
+		<label class="ss-q-title" for="entry_5">Comments</label>
+		<input type="text" name="entry.5.single" value="" class="ss-q-short" id="entry_5">
+	</div>
+	<input type="submit" name="submit" value="Submit">
+</body>
+</html>
