@@ -106,25 +106,9 @@
 				/*
 				第四步：
 				*/
-				var friendsDiv = document.getElementById("friendsList");
 				
-				FB.api('/me/friends', function(response){
 				
-					var i=0;
-					
-					while(response['data'][i] != null){
-						var userFriends = document.createElement("div");
-						
-						var fId = response['data'][i]['id'];
-						var fName = response['data'][i]['name'];
-						
-						userFriends.innerHTML = '<img src="https://graph.facebook.com/' + fId + '/picture" />' + '<span>' + fName + '</span>';
-						userFriends.setAttribute("onclick", "changeInfo("+fId+");");
-						friendsDiv.appendChild(userFriends);
-						
-						i++;
-					}
-				});
+				
 				
 				/*
 				第五步：
@@ -186,11 +170,6 @@
 			
 			function changeInfo(friends){
 				
-				var name = document.getElementById("name");
-				var gender = document.getElementById("gender");
-				var birth = document.getElementById("birth");
-				var loca = document.getElementById("loca");
-				
 				FB.api("/"+friends, function(response) {
 					
 					$("#name").text(response.name);
@@ -199,9 +178,6 @@
 					$("#loca").text(response.location.name);
 					
 				});
-				
-				var publish = document.getElementById("publish");
-				publish.setAttribute("onclick", "publish("+friends+");");
 				
 			}
 		</script>
