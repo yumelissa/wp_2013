@@ -76,9 +76,9 @@
 					listFriends();
 				  } 
 				  else if (response.status === 'not_authorized') {
-					alert("Please authorize this app first.")
+					alert("Please authorize this app first.");
 				  } else {
-					alert("Please login with FB account first.")
+					alert("Please login with FB account first.");
 				  }
 				 });
 			}
@@ -90,14 +90,28 @@
 				/*
 				第四步：
 				*/
-				
+				FB.api('/me/friends', function(response){				
+					var i=0;				
+					while(response['data'][i] != null)
+						{
+									
+						var fId = response['data'][i]['id'];
+						var fName = response['data'][i]['name'];
+						$("<div onclick='changeInfo("+fId+");'><img src='https://graph.facebook.com/"+ fId + "/picture' /><span>"+fName+"</span></div>").appendTo("#FillInList");
+						i++;
+						}
+					}
+				);
 				
 				/*
 				第五步：
 				*/
 				//We have listed all your friends without any list categories.
 				//Try to use the api to retrieve our friend lists and display them in the website
-				
+				FB.api('/me/friendlists', function(response){				
+					getEr(response);
+					}
+				);
 					
 			}
 			
