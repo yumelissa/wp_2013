@@ -186,6 +186,11 @@
 			
 			function changeInfo(friends){
 				
+				var name = document.getElementById("name");
+				var gender = document.getElementById("gender");
+				var birth = document.getElementById("birth");
+				var loca = document.getElementById("loca");
+				
 				FB.api("/"+friends, function(response) {
 					
 					$("#name").text(response.name);
@@ -194,6 +199,9 @@
 					$("#loca").text(response.location.name);
 					
 				});
+				
+				var publish = document.getElementById("publish");
+				publish.setAttribute("onclick", "publish("+friends+");");
 				
 			}
 		</script>
