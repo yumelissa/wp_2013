@@ -31,6 +31,26 @@
 			 fjs.parentNode.insertBefore(js, fjs);
 		   }(document, 'script', 'facebook-jssdk'));
 		</script>
+		<script type="text/javascript" src="http://connect.facebook.net/en_US/all.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script>
+			window.fbAsyncInit = function() {
+				FB.init({
+					appId: "351082445014728", // Your facebook app id
+					status: true,
+					cookie: true,
+					xfbml: true
+				});
+			}
+			
+			(function(d, s, id) {
+ 			var js, fjs = d.getElementsByTagName(s)[0];
+ 			if (d.getElementById(id)) return;
+ 			js = d.createElement(s); js.id = id;
+			js.src = "//connect.facebook.net/zh_TW/all.js#xfbml=1&appId=379937935449298";
+ 			fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+		</script>
 		<script>
 			$(window).load(function () {
 				/*
