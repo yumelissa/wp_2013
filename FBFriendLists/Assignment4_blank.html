@@ -62,29 +62,25 @@
 				因次在實作的過程中，必須先思考自己會需要用到哪些資訊
 				在這次的作業中，我們需要使用者的生日，居住地，讀取朋友清單，管理朋友清單（如果需要的話）
 				*/
-				FB.login( successCall, { scope: 'read_friendlists, manage_friendlists, friends_location, friends_birthday'});
+				FB.login( logincheck, { scope: 'read_friendlists, manage_friendlists, friends_location, friends_birthday'});
 			});
 			
-			function successCall(){
+			function logincheck(){
 				
 				FB.getLoginStatus(function(response) {
-					if (response.status === 'connected') {
+				  if (response.status === 'connected') {
 					
-						//uid = response.authResponse.userID;
-						//Access_Token = response.authResponse.accessToken;
-						
-						
-						listFriends();
-					} else if (response.status === 'not_authorized') {
-					// the user is logged in to Facebook, but not connected to the app
-						alert("Please authorize this app!");
-						window.location = defaultPath;
-					} else {
-					// the user isn't even logged in to Facebook.
-						alert("Please Login with your Facebook account!");
-						window.location = defaultPath;
-					}
-				});
+					var uid = response.authResponse.userID;
+					var accessToken = response.authResponse.accessToken;
+					
+					listFriends();
+				  } 
+				  else if (response.status === 'not_authorized') {
+					alert("Please authorize this app first.")
+				  } else {
+					alert("Please login with FB account first.")
+				  }
+				 });
 			}
 			
 			function listFriends(){
@@ -94,8 +90,6 @@
 				/*
 				第四步：
 				*/
-				
-				
 				
 				
 				/*
