@@ -9,7 +9,7 @@
 	<body>
 		<!--第一步：請先在此加入Facebook應用程式開發所需要的的資源，請參考 https://developers.facebook.com/docs/reference/javascript/ -->
 		<div id="fb-root"></div>
-		<!--<script>
+		<script>
 		  window.fbAsyncInit = function() {
 			// init the FB JS SDK
 			FB.init({
@@ -30,7 +30,7 @@
 			 js.src = "//connect.facebook.net/en_US/all.js";
 			 fjs.parentNode.insertBefore(js, fjs);
 		   }(document, 'script', 'facebook-jssdk'));
-		</script> -->
+		</script>
 		<script type="text/javascript" src="http://connect.facebook.net/en_US/all.js"></script>
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 		<script>
@@ -62,12 +62,38 @@
 				FB.login( successCall, { scope: 'friends_birthday, friends_hometown, friends_location, publish_stream'});
 			});
 			
-			function loginDialog(){
+			function successCall(){
 				
-				/*
-				第三步：以FB.getLoginStatus來確認使用者的登入狀態，請參考 https://developers.facebook.com/docs/reference/javascript/FB.getLoginStatus/
-				*/
-				
+				FB.getLoginStatus(function(response) {
+					if (response.status === 'connected') {
+					
+					/* the form returned
+					{
+						status: 'connected',
+						authResponse: {
+							accessToken: '...',
+							expiresIn:'...',
+							signedRequest:'...',
+							userID:'...'
+						}
+					}
+					*/
+					
+						uid = response.authResponse.userID;
+						Access_Token = response.authResponse.accessToken;
+						
+						
+						listFriends();
+					} else if (response.status === 'not_authorized') {
+					// the user is logged in to Facebook, but not connected to the app
+						alert("Please authorize this app!");
+						window.location = defaultPath;
+					} else {
+					// the user isn't even logged in to Facebook.
+						alert("Please Login with your Facebook account!");
+						window.location = defaultPath;
+					}
+				});
 			}
 			
 			function listFriends(){
