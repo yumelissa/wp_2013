@@ -108,7 +108,7 @@ body{
 	height:88%;
 	margin:0px;
 	padding:0px;
-	overflow:auto;
+	overflow:hidden;
 }
 			
 #GroupList div ul div{
