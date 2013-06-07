@@ -97,7 +97,7 @@ body{
 			
 #GroupList div{
 	width:250px;
-	height:60%;
+	height:40%;
 	float:left;
 	margin:2px;
 	margin-top:0px;
@@ -117,7 +117,6 @@ body{
 	margin-bottom:1px;
 	color:#FFFFFF;
 	margin:0px;
-	width:190px;
 }
 			
 #GroupList div ul div img{
