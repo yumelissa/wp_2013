@@ -127,8 +127,8 @@
 				while (temp["data"][i] != null){
 					GroupID[i] = temp["data"][i]["id"];//Save the id value of the group into an array.
 					
-					$("<div ID='group'><h1>" + temp["data"][i]["name"] + "</h1><ul class='sortFB connectSort' id='"+ GroupID[i] +"'></ul></div>").appendTo("#GroupList");
-					$('#group').css('overflow-x':'hidden';'overflow-y':'auto');
+					$("<div class='group'><h1>" + temp["data"][i]["name"] + "</h1><ul class='sortFB connectSort' id='"+ GroupID[i] +"'></ul></div>").appendTo("#GroupList");
+					$('.group').css('overflow-x':'hidden';'overflow-y':'auto');
 
 				
 					i++;
