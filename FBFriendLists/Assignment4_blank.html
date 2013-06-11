@@ -186,7 +186,7 @@
 					var i=GruoupID.length;
 					GroupID[i+1]=res;
 					$("<div><h1>" + temptitle + "</h1><ul class='sortFB connectSort' id='"+ res +"'></ul></div>").appendTo("#GroupList");
-															
+					getMembers(i);
 				});
 				}
 				else{
@@ -207,7 +207,7 @@
 				<span>住處：</span><span style="color:#000066;"><b id="loca"></b></span><br/>
 				
 				<div>
-					<button id="create" onClick="create">Creat a new group list</button>
+					<button id="create" onClick="create();">Creat a new group list</button>
 					<button id="delete">Delete a group list</button>
 				</div>
 			</div>
