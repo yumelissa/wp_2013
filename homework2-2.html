@@ -1,0 +1,80 @@
+<html>
+<header><title>Contact Form</title></header>
+<link rel="stylesheet" type="text/css"
+href="homework2-2.css">
+<body>
+    <article>
+       <form action="https://docs.google.com/spreadsheet/formResponse?formkey=dDhFdFBITDc2X3FaUGNPaGRWb29mNlE6MQ&amp;ifq" method="POST">
+       <fieldset class="field">
+       <legend class="legend">Contact Form</legend>
+        <div ID="student_id">
+            <label for="student_id">Student ID</label>
+            <input type="hidden" name="entry.0.single" value="99306008" id="student_id">
+        </div>
+        <br>
+        <div ID="gender">
+            <label for="gender">gender</label>
+            <ul>
+            <li>
+                <label><input type="radio" name="entry.1.group" value="Boy" id="gender_1">Boy</label>
+            </li> 
+            <li>
+                <label><input type="radio" name="entry.1.group" value="Girl" id="gender_2">Girl</label>
+            </li>
+            </ul>
+        <br>
+        <div ID="foods">
+            <label for="foods">favorite foods</label>
+            <ul>
+            <li>
+                <label><input type="checkbox" name="entry.2.group" value="Apple">Apple</label>
+            </li>
+            <li>
+                <label><input type="checkbox" name="entry.2.group" value="Banana">Banana</label>
+            </li> 
+            <li>
+                <label><input type="checkbox" name="entry.2.group" value="Lemon">Lemon</label>
+            </li>
+            <li>
+                <label><input type="checkbox" name="entry.2.group" value="Watermelon">Watermelon</label>
+            </li>
+            </ul>
+        </div>
+        <br>
+        <div ID="relationship">
+            <label for="relationship">relationship</label>
+            <select name="entry.3.single" id="relationship">
+                <option value="single">single</option> 
+                <option value="dating">dating</option> 
+                <option value="married">married</option> 
+                <option value="hard to explain">hard to explain</option></select>
+        </div>
+        <br>
+        <div ID="email">
+            <labelfor="entry_4">email</label>
+            <input type="text" name="entry.4.single" value="" id="email"> 
+        </div>
+        <br>
+        <div ID="comments">
+            <label for="comments">comments</label>
+	    <br>
+	    <textarea name="entry.5.single" value="" id="conmments"></textarea>
+        </div>
+        <br>
+        </fieldset>
+	<br>
+	<div><a href="http://yumelissa.github.com/wp_2013/homework2.html" align="right"><p ID="next">下一頁</p></a></div>
+        <div ID="Submit">
+        <input type="submit" name="submit" value="Submit">
+        </div>
+</form>
+    </article>
+
+    <br>
+    <br>
+    <footer>
+        <hr>
+        <p align="right">Web程式設計- Homework 2 99306008 余曉玟</p>
+    </footer>
+</body>
+</html>

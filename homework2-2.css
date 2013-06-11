@@ -1,0 +1,39 @@
+body{
+        margin-top:50px;margin-bottom:30px;margin-right:100px;margin-left:100px;
+        background:#d9f4ed;
+        }
+    ul{
+        list-style-type:none;
+        }
+    .field{
+        background#d9f4ed;
+        border: 8px solid #ffffff;
+        border-radius:8px;
+        }
+    .legend{
+        font-family: 'Inika', serif;
+        font-size:150%;
+        }
+    #Submit{
+        width:50px;
+        align:right;
+        float:right;
+        }
+    footer{
+        clear:right;
+        }
+    #next{
+            text-align:right;
+            }
+	a:link{
+            text-decoration:none;
+            color: #4682b4;
+            border:
+          }
+        a:visited{
+            color: #a52a2a;
+          }
+        a:hover{
+            text-decoration: underline;
+            color: #FFFF80;
+          }

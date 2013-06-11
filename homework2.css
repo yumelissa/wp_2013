@@ -1,0 +1,60 @@
+body{
+            background-image:url('http://www.wu2.com.tw/photo/work/pro4/99999704.JPG');
+            margin-left:100px;margin-right:100px;margin-top:80px;
+            }
+        li{
+            list-style-type:none;
+            }
+        .eng_family{
+            color:#191970;
+            font-family: 'Merienda', cursive;
+            font-size:200%;
+        }
+        .cn_name{
+            font-family:\5FAE\8EDF\6B63\9ED1\9AD4,\65B0\7D30\660E\9AD4;
+            font-weight:900;
+            }
+        .eng_family_s{
+            width:15%;height:100px;
+            background:#FFC1C1;
+            box-sizing: border-box;
+            font-family: 'Merienda', cursive;
+            text-align:center;
+            display: inline-block;
+            padding:5px;
+            border-radius: 10px; 
+            float:left;
+            
+            }
+        .li_context{
+            width:50%;height:100px;
+            background:#f5deb3;
+            box-sizing: border-box;
+            display: inline-block;
+            opacity: 0.8;
+            border-radius: 10px;
+            padding:5px;
+            float:left;
+            }
+        .blank{
+            clear:left;
+            }
+        .pic{
+            border: 4px solid #ffffff;
+            -webkit-transform: rotate(10deg);
+                }
+        #next{
+            text-align:right;
+            }
+        a:link{
+            text-decoration:none;
+            color: #4682b4;
+            border:
+          }
+        a:visited{
+            color: #a52a2a;
+          }
+        a:hover{
+            text-decoration: underline;
+            color: #FFFF80;
+          }

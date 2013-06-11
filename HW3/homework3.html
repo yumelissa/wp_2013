@@ -1,0 +1,144 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=big5" />
+<title>City Information</title>
+<!--css 連結 -->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css" /> 
+<link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.min.css"/> 
+<link rel="stylesheet" type="text/css" href="css/bootstrap-select.min.css" /> 
+<link href='http://fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
+<!--javascript 連結 -->
+<script type="text/javascript" src="jquery-1.9.1.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script> 
+<script type="text/javascript" src="hw3_js.js"></script>
+<script type="text/javascript" src="js/bootstrap-select.min.js"></script>
+
+</head>
+<style>
+	@media screen and (min-width: 1200px) {
+	}
+	body{
+	 <!--margin-top: 50px;	
+	 margin-left:100px;
+	 margin-right:100px;
+	 position: relative; -->
+	}
+	#title_name{
+		font-family: 'Abril Fatface', cursive;
+	}
+	#information{ background: #CACACA;
+		-webkit-border-radius: 10px;
+		margin:10px;
+		padding:10px;
+	}
+	.one_city_link{
+		display: inline-block;
+		padding: 4px 12px;
+	}
+	.infor{
+		font-size:18px;
+	}
+	.infor_detial{
+		font-size:18px; color:#666666;
+	}
+	.dropdown-toggle{
+		width:160px; height:30px; 
+	}
+	.caret{
+		position:absolute;
+	}
+</style>
+
+<nav>
+<div class="navbar navbar-inverse navbar-fixed-top">
+	<div class="navbar-inner">
+		<div class="container">
+			<button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"></button>
+			<a class="brand" href="#">City Information</a>
+		</div>
+	</div>
+</div>
+</nav>
+<body>
+<div classs="span 12" id="nav"><p><h4 id="title_name">City Information</h4></p></div>
+<div class="container-fluid">
+  <div class="row-fluid">
+    <div class="span5" id="citys_link">
+		<div class="method1"><h3>Method.1 直接點擊</h3>
+			<div class="one_city_link"><a href="javascript:;" id="2306188">七堵</a></div>
+			<div class="one_city_link"><a href="javascript:;" id="2306229">三灣</a></div>
+			<div class="one_city_link"><a href="javascript:;" id="2306228">三芝</a></div>
+			<div class="one_city_link"><a href="javascript:;" id="2306184">中壢</a></div>
+			<div class="one_city_link"><a href="javascript:;" id="2306195">二林</a></div>
+			<div class="one_city_link"><a href="javascript:;" id="2306193">佳里</a></div>
+			<div class="one_city_link"><a href="javascript:;" id="2306179">內湖</a></div>
+			<div class="one_city_link"><a href="javascript:;" id="2306204">南投市</a></div>
+			<div class="one_city_link"><a href="javascript:;" id="2306243">南澳</a></div>
+			<div class="one_city_link"><a href="javascript:;" id="2306243">台東市</a></div>
+			<div class="one_city_link"><a href="javascript:;" id="2306209">大園</a></div>
+			<div class="one_city_link"><a href="javascript:;" id="2306210">大甲</a></div>
+			<div class="one_city_link"><a href="javascript:;" id="2306182">安平</a></div>
+			<div class="one_city_link"><a href="javascript:;" id="2306198">宜蘭市</a></div>
+			<div class="one_city_link"><a href="javascript:;" id="2306189">屏東市</a></div>
+			<div class="one_city_link"><a href="javascript:;" id="2306199">岡山</a></div>
+			<div class="one_city_link"><a href="javascript:;" id="2306180">左營</a></div>
+			<div class="one_city_link"><a href="javascript:;" id="2306206">布袋</a></div>
+			<div class="one_city_link"><a href="javascript:;" id="2306183">彰化市</a></div>
+			<div class="one_city_link"><a href="javascript:;" id="2306212">斗南</a></div>
+			<div class="one_city_link"><a href="javascript:;" id="2306217">新化</a></div>
+			<div class="one_city_link"><a href="javascript:;" id="2306186">新店</a></div>
+			<div class="one_city_link"><a href="javascript:;" id="2306218">新社</a></div>
+			<div class="one_city_link"><a href="javascript:;" id="2306185">東區</a></div>
+			<div class="one_city_link"><a href="javascript:;" id="2306213">東港</a></div>
+			<div class="one_city_link"><a href="javascript:;" id="2306224">枋山</a></div>
+			<div class="one_city_link"><a href="javascript:;" id="2306254">桃園機場</a></div>
+			<div class="one_city_link"><a href="javascript:;" id="2306211">淡水</a></div>
+			<div class="one_city_link"><a href="javascript:;" id="2306194">清水</a></div>
+			<div class="one_city_link"><a href="javascript:;" id="2306232">玉井</a></div>
+			<div class="one_city_link"><a href="javascript:;" id="2306207">石岡</a></div>
+			<div class="one_city_link"><a href="javascript:;" id="2306187">花蓮市</a></div>
+			<div class="one_city_link"><a href="javascript:;" id="2306231">萬里</a></div>
+			<div class="one_city_link"><a href="javascript:;" id="2306208">蘇澳</a></div>
+			<div class="one_city_link"><a href="javascript:;" id="2306250">虎尾</a></div>
+			<div class="one_city_link"><a href="javascript:;" id="2306181">西屯</a></div>
+			<div class="one_city_link"><a href="javascript:;" id="2306200">觀音</a></div>
+			<div class="one_city_link"><a href="javascript:;" id="2306223">金山</a></div>
+			<div class="one_city_link"><a href="javascript:;" id="2306227">關山</a></div>
+			<div class="one_city_link"><a href="javascript:;" id="2306251">雙溪</a></div>
+			<div class="one_city_link"><a href="javascript:;" id="2306255">高雄機場</a></div>
+			<div class="one_city_link"><a href="javascript:;" id="2306214">鶯歌</a></div>
+			<div class="one_city_link"><a href="javascript:;" id="2306201">鹿港</a></div>
+			<div class="one_city_link"><a href="javascript:;" id="2306203">麻豆</a></div>
+			<div class="one_city_link"><a href="javascript:;" id="2306202">龍潭</a></div>
+		</div>
+		<div class="method2"><h3>Method.2 下拉式選單</h3>
+		  <div class="dropdown">
+		  	<select class="selectpicker show-tick" id="big_city" style="display: none;"></select>
+			<select class="selectpicker show-tick" id="small_city" style="display: none;"></select>
+			  </div>
+		</div>
+    </div>
+	
+    <div class="span7" id="information">
+		<div class="infor">
+	  <p><b>Title</b></p></div>
+		<div class="infor_detial" id="infor_title"><p><b></b></p></div>
+		<br>
+		<div class="infor"><p><b>Date</b></p></div>
+		<div class="infor_detial" id="infor_date"><p><b></b></p></div>
+		<br>
+		<div class="infor"><p><b>Location</b></p></div>
+		<div class="infor_detial" id="infor_locat"><p><b></b></p></div>
+		<br>
+		<div class="infor"><p><b>Temp</b></p></div>
+		<div class="infor_detial" id="infor_temp"><p><b></b></p></div>
+		<br>
+		<div class="infor"><p><b>Text</b></p></div>
+		<div class="infor_detial" id="infor_text"><p><b></b></p></div>
+		<br>
+    </div>
+  </div>
+</div>
+</body>
+</html>
