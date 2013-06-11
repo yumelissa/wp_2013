@@ -178,7 +178,20 @@
 					$("#loca").text(response.location.name);
 					
 				});
-				
+			}
+			function create(){
+				var temptitle = prompt("Enter the name of your new friend list");						
+				if(temptitle){								
+					FB.api('me/friendlists', 'post', {name: temptitle}, function(res){
+					var i=GruoupID.length;
+					GroupID[i+1]=res;
+					$("<div><h1>" + temptitle + "</h1><ul class='sortFB connectSort' id='"+ res +"'></ul></div>").appendTo("#GroupList");
+															
+				});
+				}
+				else(){
+					alert("Please name the new list!!");
+				}
 			}
 		</script>
 			<div id="FriendList">
@@ -191,6 +204,11 @@
 				<span>性別：</span><span style="color:#000066;"><b id="gender"></b></span><br/>
 				<span>生日：</span><span style="color:#000066;"><b id="birth"></b></span><br/>
 				<span>住處：</span><span style="color:#000066;"><b id="loca"></b></span><br/>
+				
+				<div>
+					<button id="create" onClick="create">Creat a new group list</button>
+					<button id="delete">Delete a group list</button>
+				</div>
 			</div>
 			<div id="GroupList">
 			</div>
