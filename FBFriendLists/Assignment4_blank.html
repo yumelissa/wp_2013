@@ -179,6 +179,12 @@
 					
 				});
 				
+			function creat(){
+				var temptitle = prompt("Enter the name of your new friend list");						
+				if(temptitle){
+					FB.api('me/friendlists', 'post', {name: temptitle}, function(res){		
+				}
+			}
 			}
 		</script>
 			<div id="FriendList">
@@ -191,6 +197,11 @@
 				<span>性別：</span><span style="color:#000066;"><b id="gender"></b></span><br/>
 				<span>生日：</span><span style="color:#000066;"><b id="birth"></b></span><br/>
 				<span>住處：</span><span style="color:#000066;"><b id="loca"></b></span><br/>
+				
+				<div>
+					<button id="creat" onClick="creat">Creat a new group list</button>
+					<button id="delete">Delete a group list</button>
+				</div>
 			</div>
 			<div id="GroupList">
 			</div>
