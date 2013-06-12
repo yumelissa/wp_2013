@@ -182,7 +182,7 @@
 			function create(){
 				var temptitle = prompt("Enter the name of your new friend list");						
 				if(temptitle){								
-					FB.api('me/friendlists', 'post', {name: temptitle}, function(res){
+					FB.api('me/friendlists', 'post', {name: prompt("Enter the name of your new friend list")}, function(res){
 					var i=GroupID.length;
 					GroupID[i+1]=res;
 					$("<div><h1>" + temptitle + "</h1><ul class='sortFB connectSort' id='"+ res +"'></ul></div>").appendTo("#GroupList");
