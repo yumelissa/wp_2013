@@ -129,14 +129,14 @@
 					
 					$("<div class='group'><h1>" + temp["data"][i]["name"] + "</h1><ul class='sortFB connectSort' id='"+ GroupID[i] +"'></ul></div>").appendTo("#GroupList");
 					$('.group').css({'[overflow-x]':'[hidden]','[overflow-y]':'[auto]'});
-					getMembers(i);
+					
 				
 					i++;
 				}
 					
 				var i = 0;
 				
-				//start to display the existent members in the existent lists.
+				getMembers(i);//start to display the existent members in the existent lists.
 				
 			}	
 			
